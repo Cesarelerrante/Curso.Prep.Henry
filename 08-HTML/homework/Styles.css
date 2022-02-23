@@ -25,4 +25,10 @@ h1 {
         font-size: 22px; color: black solid;
         
     }
+    #contenedor ¨{
+        display: flex;
+        justify-content: center;       
+        
+    }
+    
 
