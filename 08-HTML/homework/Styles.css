@@ -1,3 +1,10 @@
+body {
+    background-image:url(http://bairesquerido.com.ar/wp-content/uploads/2016/02/2016-02-18-10.22.37-1140x855.jpg);
+    background-repeat: no-repeat;
+    color: #FFFFFFFF;
+    
+}
+
 h1 {
     font-size: 28; color: red;
     
@@ -12,9 +19,10 @@ h1 {
         border: 20px black solid;
     } 
     #spanID {
-        margin: 50px;
+        margin: 10px;
     }
     #spanID {
-        font-size: 18px;
+        font-size: 22px; color: black solid;
+        
     }
 
