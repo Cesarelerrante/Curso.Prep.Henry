@@ -1,0 +1,84 @@
+&&
+Es un operador, logico"Y" ("AND"). Está escrito con dos símbolos (&&).
+Lo que hace es comparar dos expresiones y da como resultado verdadero (true) si las dos expresiones son true.
+Si uno (o las dos) de esas expresiones es falsa, va a devolver false:
+Ejemplo:
+if (100 > 10 && 10 === 10) {
+    console.log('las dos declaraciones son verdaderas entonces el codigo se ejecutara;)
+}
+if (10 === 9 && 10 > 9) {
+    console.log('Una de las declaraciones es falsa, entonces && devolverá false, y el código no se ejecutará');
+}
+||
+Este es el operador "Ó" ("OR"). 
+Se escribe con dos barras verticales (||). 
+Identifica si una o las dos expresiones son verdaderas,entonces va a devolver true.
+Pero si las dos expresiones son falsas devolvera false 
+Ejemplo:
+if (100 > 10 || 10 === 10) {
+    console.log('Las dos declaraciones son ciertas, el código se ejecutará');
+}
+if (10 === 9 || 10 > 9) {
+    console.log('Aca una sola de las declaraciones es cierta, entonces devolvera true y el código 
+    se ejecutará');
+}
+if (10 === 9 || 1 > 9) {
+    console.log('En este caso las dos declaraciones son falsas, entonces devolverá false y rl código 
+    no se ejecutará');
+}
+!
+Este operador logico es "NOT" ("NO"). Está escrito como un solo signo de exclamación (!). 
+Vimos este operador antes al determinar la igualdad (!==). Este operador devolverá el valor 
+booleano opuesto de lo que se le indica.
+Ejemplo:
+if (!false) {
+    console.log('El ! devolverá true, porque es lo contrario de false, el código se ejecutará');
+}
+if (!(1 === 1)) {
+    console.log('1 es igual a 1, de modo que la expresión devuelve true. El operador ! devolverá lo contrario
+    de eso, por lo que este código NO se ejecutará');
+}
+Notas sobre operadores lógicos
+Un par de cosas a tener en cuenta sobre los operadores lógicos.
+Las expresiones se evalúan en orden, y la computadora omitirá cualquier expresión redundante. 
+En una declaración &&, si la primera expresión es false, la segunda expresión no se evaluará porque las dos
+expresiones deben ser true. Lo mismo para la declaración ||. Si la primera expresión es verdadero, la segunda 
+no se evaluará porque solo debe haber una declaración verdadero para cumplir con los requisitos del operador.
+Siempre hay que usarparéntesis. Como vimos en el segundo ejemplo de operador !, usamos paréntesis para 
+evaluar PRIMERO lo que estaba dentro de los paréntesis, luego aplicamos el operador !. 
+Podemos ajustar cualquier expresión entre paréntesis y se evaluará antes de evaluar la expresión como un todo.
+
+for
+La mayoría del software se ejecuta en bucles, evaluando expresiones una y otra vez hasta que devuelve lo que 
+estamos buscando o se detiene después de cierto tiempo. Javascript tiene dos expresiones de bucle incorporadas
+y ahora vamos a ver la primera, el bucle "for".
+
+Los bucles for tienen una sintaxis única, similar a la instrucción if, pero un poco más compleja. 
+Primero tenemos la palabra clave for, seguida de paréntesis y luego abrir y cerrar llaves.
+Dentro de los paréntesis necesitaremos tres cosas. Primero, tenemos que declarar una variable, esto es sobre 
+lo que se repetirá el bucle. Entonces tendremos una expresión condicional, el ciclo continuará sucediendo 
+hasta que esta declaración sea false. Tercero, incrementaremos nuestra variable. Las tres declaraciones están
+separadas por un punto y coma.
+Ejemplo:
+for (let i = 0                 ; i < 10                 ; i++          ) {
+// | Declaramos una variable | Expresión condcicional | Incrementamos la variable |
+    console.log(i);
+}
+En este ejemplo, vemos que primero establecemos nuestra variable i en 0, el ciclo se ejecutará y cada vez que
+llegue al final, aumentará el contador en uno. El bucle for evaluará la expresión condicional. Si es true, 
+se ejecutará nuevamente, si es false dejará de funcionar.
+
+El operador ++
+Vimos en el último ejemplo el operador ++. Esta es la abreviatura de Javascript para 
+"Decirle que el valor de la variable actual es más uno". 
+Bucles infinitos
+Es probable que un bucle se atasque en lo que se llama "bucle infinito". Hay que asegurarse de que haya una
+forma de finalizar el bucle. 
+Ejemplo:
+
+for (let i = 0; i >= 0; i++) {
+    console.log(i);
+}
+Debido a que nuestra expresión condicional SIEMPRE será true ( i nunca será menor que 0), este ciclo se 
+ejecutará esencialmente para siempre. Esto interrumpirá su programa y puede bloquear nuestro navegador web o 
+computadora.
