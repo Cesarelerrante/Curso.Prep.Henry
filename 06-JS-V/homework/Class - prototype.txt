@@ -1,0 +1,12 @@
+Class
+Son "funciones especiales", como las expresiones de funciones y declaraciones de funciones, 
+la sintaxis de una clase tiene dos componentes: expresiones de clases y declaraciones de clases.
+
+prototype
+
+JavaScript es a menudo descrito como un lenguaje basado en prototipos - para proporcionar mecanismos
+de herencia, los objetos pueden tener un objeto prototipo, el cual actúa como un objeto plantilla 
+que hereda métodos y propiedades. O sea los métodos y propiedades son definidos en la propiedad 
+prototype, esta alojada en la función constructora del objeto, no en la instancia misma del objeto.
+Es raro encontrar propiedades definidas en la propiedad prototype, no son muy flexibles cuando son 
+definidas de esta forma.

@@ -1,0 +1,26 @@
+Objeto
+Un objeto es un conjunto de propiedades, y una propiedad es una asociación entre un nombre (o clave)
+y un valor. El valor de una propiedad puede ser una función, en ese caso la propiedad es conocida 
+como un método. Además de los objetos que están predefinidos en el navegador, podemos definir nuestros propios objetos.
+
+Propiedades
+Un objeto tiene propiedades asociadas a él. La propiedad de un objeto se puede explicar como una 
+variable adjunta al objeto. Las propiedades de un objeto básicamente son lo mismo que las variables comunes de JavaScript, excepto por el nexo con el objeto. Las propiedades de un objeto definen las características del objeto
+
+Métodos
+Las funciones guardadas en un objeto se denominan métodos. Hemos utilizado muchos métodos hasta 
+ahora a lo largo de este curso. `.length`,` .push`, `.pop`, etc., son todos métodos. 
+Podemos establecer una clave para un nombre y el valor para una función. Al igual 
+que otras veces que llamamos métodos, llamaremos a este método usando notación de puntos y 
+paréntesis finales.
+Podemos llamar a un método con argumentos como lo haríamos con una función normal.
+
+For…in
+La instrucción for-in repite sobre todas las propiedades enumerables de un objeto que está 
+codificado por cadenas.
+
+¿Por qué usar for...in?
+Ya que for...in está construido para repetir propiedades de objeto, no se recomienda su uso con 
+arreglos y opciones como Array prototype.forEach() . 
+El uso más practico es para usar en la depuración, porque es una forma fácil de comprobar las 
+propiedades de un objeto (usando la consola o de otro forma)
